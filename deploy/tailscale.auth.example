@@ -1,0 +1,5 @@
+# Copie para tailscale.auth (mesma pasta deploy/) e preencha.
+# NÃO commite tailscale.auth — contém chave secreta.
+#
+# Obtenha em: https://login.tailscale.com/admin/settings/keys
+tskey-auth-COLE_SUA_CHAVE_AQUI

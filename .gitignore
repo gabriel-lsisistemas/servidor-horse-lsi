@@ -1,0 +1,15 @@
+**/bin/
+**/obj/
+**/.vs/
+**/*.user
+ServidorHorseLsi.Api/conexao.conf
+ServidorHorseLsi.Api/appsettings.json
+ServidorHorseLsi.Api/appsettings.Development.json
+deploy/tailscale.auth
+publish-linux/
+publish-api-nfse-linux/
+ApiNFS - LINUX/
+Demos/
+_docx_build/
+_*.txt
+_write_2422.php

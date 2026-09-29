@@ -1,0 +1,18 @@
+[Unit]
+Description=API NFS NFSe (ACBr)
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/servidorHorse/publish-api-nfse
+# libacbrnfse64.so é build GTK — precisa de display virtual no servidor headless
+ExecStart=/usr/bin/xvfb-run -a /opt/servidorHorse/publish-api-nfse/ApiNFSe
+Restart=always
+RestartSec=10
+User=root
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=LD_LIBRARY_PATH=/opt/servidorHorse/publish-api-nfse:/opt/servidorHorse/publish-api-nfse/ACBrLib/x64:/opt/servidorHorse/publish-api-nfse/libs
+# OpenSSL 3: PFX antigos precisam do provider legacy
+Environment=OPENSSL_CONF=/opt/servidorHorse/publish-api-nfse/openssl-legacy.cnf
+
+[Install]
+WantedBy=multi-user.target

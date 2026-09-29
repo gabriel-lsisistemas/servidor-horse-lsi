@@ -1,0 +1,14 @@
+[Unit]
+Description=Servidor Horse LSI API
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/servidorHorse/publish-linux
+ExecStart=/usr/bin/dotnet /opt/servidorHorse/publish-linux/ServidorHorseLsi.Api.dll
+Restart=always
+RestartSec=10
+User=root
+Environment=ASPNETCORE_ENVIRONMENT=Production
+
+[Install]
+WantedBy=multi-user.target

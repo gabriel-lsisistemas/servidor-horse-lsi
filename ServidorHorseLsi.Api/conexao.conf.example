@@ -1,0 +1,28 @@
+; Copie este arquivo para conexao.conf na mesma pasta do executavel / dotnet run.
+; Valores devem ser IDENTICOS ao servidor Horse (Pascal).
+; SERVIDOR = IP Tailscale do SQL Server (rede privada), nao IP publico.
+
+[GESTOR]
+SERVIDOR=26.169.196.26
+BANCO=clicklite
+USUARIO=sa
+SENHA=sys
+TIPO_BANCO=SQLSERVER
+
+[GESTOR_FREE]
+SERVIDOR=26.169.196.26
+BANCO=clickfreelicenca
+USUARIO=sa
+SENHA=sys
+TIPO_BANCO=SQLSERVER
+
+[GESTOR_LSICLICK]
+SERVIDOR=26.169.196.26
+BANCO=clicklicenca
+USUARIO=sa
+SENHA=sys
+TIPO_BANCO=SQLSERVER
+
+; Existe no Horse mas NAO e usado pela API .NET atual:
+; [GESTOR_NSGESTOR]
+; BANCO=clicklicoem

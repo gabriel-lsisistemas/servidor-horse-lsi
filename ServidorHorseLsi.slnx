@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ServidorHorseLsi.Api/ServidorHorseLsi.Api.csproj" />
+  <Project Path="ServidorHorseLsi.Tests/ServidorHorseLsi.Tests.csproj" />
+</Solution>
